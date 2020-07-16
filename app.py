@@ -5,7 +5,7 @@ from flask_cors import CORS
 from flask_heroku import Heroku
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = ""
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgres://hxlxbpoctqfkgw:dd8a8e0f74c3e7e815ee80c84e20e5cdb057bbfb3bee5029ba480d0ec512ac70@ec2-35-175-155-248.compute-1.amazonaws.com:5432/dcrlelb1nohnqe"
 
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
